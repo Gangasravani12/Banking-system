@@ -5,37 +5,53 @@ A secure and efficient web-based Banking System designed to manage essential ban
 # Table of Contents
 
 Features
+
 Technologies
+
 Usage
+
 Database Structure
 
 # Features
 
-Account Management: Create new accounts, view balance, and manage funds with ease.
-Transactions: Perform deposits, withdrawals, and transfers between accounts securely.
-Account Deactivation: Temporarily disable accounts with the option to reactivate them later.
-User Authentication: Secure login with account verification and data protection.
-Error Handling: Clear messaging for insufficient funds, incorrect credentials, etc.
+**Account Management**: Create new accounts, view balance, and manage funds with ease.
+
+**Transactions:** Perform deposits, withdrawals, and transfers between accounts securely.
+
+**Account Deactivation:** Temporarily disable accounts with the option to reactivate them later.
+
+**User Authentication:** Secure login with account verification and data protection.
+
+**Error Handling:** Clear messaging for insufficient funds, incorrect credentials, etc.
 
 # Technologies
 
-Frontend: HTML, CSS
-Backend: Java Servlets
-Database: MySQL
+**Frontend:** HTML, CSS
+
+**Backend:** Java ,Servlets
+
+**Database:** MySQL
 
 # Usage
 
-Launch the Server: Start the Apache Tomcat server and open the application in a web browser.
-Navigate: Use the menu options to create accounts, view balances, make deposits/withdrawals, transfer funds, or deactivate accounts.
-Reactivation: If attempting to create an account with deactivated credentials, users will be prompted to reactivate or proceed with a new account.
+**Launch the Server:** Start the Apache Tomcat server and open the application in a web browser.
+
+**Navigate:** Use the menu options to create accounts, view balances, make deposits/withdrawals, transfer funds, or deactivate accounts.
+
+**Reactivation:** If attempting to create an account with deactivated credentials, users will be prompted to reactivate or proceed with a new account.
 
 # Database Structure
 
-accountInfo
+**accountInfo** (Database table name)
+
 acc_num: INT, Primary Key
+
 name: VARCHAR
+
 password: VARCHAR
+
 amount: DOUBLE
+
 status: VARCHAR (active/deactivate)
 
 # vedio Demo
