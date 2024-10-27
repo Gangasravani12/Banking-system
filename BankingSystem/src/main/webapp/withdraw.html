@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Withdrawal</title>
+<style>
+body{
+background-image: linear-gradient(
+    to bottom, 
+    rgba(173, 216, 230, 0.3), /* Light blue at the top */
+    rgba(0, 0, 128, 0.7)      /* Darker navy blue at the bottom */
+), 
+url("with.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
+.header{
+	display: flex;
+	padding: 5px;
+	background-color: black;
+	opacity:0.6;
+	justify-content: center;
+	align-items:center;
+	gap: 170px;
+	
+}
+h1{
+	color:white;
+	font-family: 'Pacifico', cursive;
+	transition: transform 0.3s ease, color 0.3s ease;
+}
+h1:hover{
+	color: red;
+	transform: scale(1.5);
+}
+a{
+	color: white;
+	font-family: Georgia;
+	text-decoration: none;
+	justify-content: center;
+	transition: transform 0.3s ease,color 0.3s ease;
+}
+a:hover{
+	color: red;
+	text-decoration: underline;
+	transfrom: scale(1);
+}
+.container{
+background-image: linear-gradient(
+    to bottom, 
+    rgba(173, 216, 230, 0.3), /* Light blue at the top */
+    rgba(25, 25, 112, 0.7),   /* Midnight blue for a deep contrast */
+    rgba(0, 0, 128, 0.7)      /* Darker navy blue at the bottom */
+);
+width: 40%;
+}
+input{
+padding: 10px;
+text-align: center;
+border-radius: 10px;
+color: black;
+font-family: cursive;
+}
+input[type="reset"]:hover{
+background-color: red;
+color: white;
+font-size: 20px;
+}
+input[type="submit"]:hover{
+background-color: red;
+color: white;
+font-size: 20px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div>
+<h1>DS Bank</h1>
+</div>
+<div>
+<a href="home.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="about.html">About us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="new.html">New Account</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="balance.html">Balance</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="depoist.html">Depoist</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="withdraw.html">Withdrawal</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="transfer.html">Transfer</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="close.html">Close A/C's</a>
+</div>
+</div>
+<center>
+<div class="container">
+
+<h2 style="color: black; font-family:serif;">Withdrawal Form</h2>
+<p style="color: black; margin-top: -20px;">Please enter valid details to withdraw the money!</p>
+<form action="Withdraw" method="post">
+<input type="text" name="acc_num" placeholder="Enter your account number" required><p></p><p></p>
+<input type="text" name="acc_name" placeholder="Enter your name" required><p></p><p></p>
+<input type="text" name="psw" placeholder="Enter the password" required><p></p><p></p>
+<input type="text" name="withamount" placeholder="Enter amount" required><p></p><p></p>
+<input type="submit" value="withdraw">
+<input type="reset" value="clear">
+
+</div>
+</center>
+</body>
+</html>

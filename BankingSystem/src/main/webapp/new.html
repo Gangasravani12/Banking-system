@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>New Account creation</title>
+<style>
+body{
+background-image: linear-gradient(
+    to bottom, 
+    rgba(173, 216, 230, 0.3), /* Light blue at the top */
+    rgba(0, 0, 128, 0.7)      /* Darker navy blue at the bottom */
+), 
+url("acc.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
+.header{
+	display: flex;
+	padding: 5px;
+	background-color: black;
+	opacity:0.6;
+	justify-content: center;
+	align-items:center;
+	gap: 170px;
+	
+}
+h1{
+	color:white;
+	font-family: 'Pacifico', cursive;
+	transition: transform 0.3s ease, color 0.3s ease;
+}
+h1:hover{
+	color: red;
+	transform: scale(1.5);
+}
+a{
+	color: white;
+	font-family: Georgia;
+	text-decoration: none;
+	justify-content: center;
+	transition: transform 0.3s ease,color 0.3s ease;
+}
+a:hover{
+	color: red;
+	text-decoration: underline;
+	transfrom: scale(1);
+}
+.acc{
+background-color: white;
+padding: 20px;
+justify-content: center;
+align-items:center;
+width: 35%;
+border-radius: 10px;
+box-sizing: border-box;  
+margin:10px auto;
+}
+table {
+    width: 100%;
+}
+td {
+    padding: 10px; /* Add padding to table cells for spacing */
+}
+tr {
+    margin-bottom: 15px; /* Add margin between rows */
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div>
+<h1>DS Bank</h1>
+</div>
+<div>
+<a href="home.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="about.html">About us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="new.html">New Account</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="balance.html">Balance</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="depoist.html">Depoist</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="withdraw.html">Withdrawal</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="transfer.html">Transfer</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="close.html">Close A/C's</a>
+</div>
+</div>
+<div class="acc">
+<center>
+<h2>Create new account</h2>
+<form action="New" method="post">
+<table>
+<tr>
+<td>Account Number : </td>
+<td><input type="text" name="acc_num" required></td>
+</tr>
+<tr>
+<td>Name : </td>
+<td><input type="text" name="acc_name" required></td>
+</tr>
+<tr>
+<td>password : </td>
+<td><input type="text" name="psw" required></td>
+</tr>
+<tr>
+<td>AMount : </td>
+<td><input type="text" name="amt" required></td>
+</tr>
+<tr>
+<td>Address : </td>
+<td><input type="text" name="addr" required></td>
+</tr>
+<tr>
+<td>mobile number : </td>
+<td><input type="text" name="mno" required></td>
+</tr>
+<tr>
+<td><input type="reset" value="Clear">
+<input type="submit" value="create"></td>
+</tr>
+</table>
+
+
+</form>
+</center>
+</div>
+</body>
+</html>
